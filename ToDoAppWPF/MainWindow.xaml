@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToDoAppWPF"
         mc:Ignorable="d"
-        Title="To-Do App" Height="350" Width="530">
+        Title="To-Do App" Height="400" Width="550">
     <Grid>
-        <TextBox Name="TaskTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="400" Height="30"/>
+        <TextBox Name="TaskTextBox" HorizontalAlignment="Left" Margin="15,40,0,0" VerticalAlignment="Top" Width="400" Height="30"/>
 
-        <Button Name="AddButton" Content="Add to list" HorizontalAlignment="Left" VerticalAlignment="Top" Background="MediumPurple" Foreground="White" BorderBrush="#FF58108C" FontSize="14" Width="95" Height="30" Margin="420,10,0,0" Click="AddButton_Click"/>
+        <Button Name="AddButton" Content="Add to list" HorizontalAlignment="Left" VerticalAlignment="Top" Background="MediumPurple" Foreground="White" BorderBrush="#FF58108C" FontSize="14" Width="90" Height="30" Margin="430,40,0,0" Click="AddButton_Click" Cursor="Hand"/>
 
-        <ListBox Name="TasksListBox" HorizontalAlignment="Center" Height="211" Margin="0,55,0,0" VerticalAlignment="Top" Width="505"/>
+        <ListBox Name="TasksListBox" HorizontalAlignment="Center" Height="211" VerticalAlignment="Center" Width="506"/>
 
-        <Button Name="RemoveButton" Content="Remove list item" HorizontalAlignment="Left" VerticalAlignment="Top" Background="MediumPurple" Foreground="White" BorderBrush="#FF58108C" FontSize="14" Width="115" Height="30" Margin="400,280,0,0" Click="RemoveButton_Click"/>
+        <Button Name="RemoveButton" Content="Remove list item" HorizontalAlignment="Left" VerticalAlignment="Top" Background="MediumPurple" Foreground="White" BorderBrush="#FF58108C" FontSize="14" Width="115" Height="30" Margin="214,319,0,0" Click="RemoveButton_Click" Cursor="Hand"/>
+
+        <TextBox Name="ToDoTitle" HorizontalAlignment="Left" Margin="202,6,0,0" TextWrapping="Wrap" Text="TO DO LIST" VerticalAlignment="Top" Width="155" FontSize="22" FontFamily="Century Gothic" FontWeight="Bold" TextAlignment="Center" BorderBrush="White"/>
 
     </Grid>
 </Window>
